@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search and Filter -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search by cuisine or name..." id="searchInput">
+        <button onclick="filterRestaurants()">Search</button>
+    </div>
+
+    <!-- Restaurant Cards Container -->
+    <div class="restaurant-container" id="restaurantContainer">
+        <!-- JavaScript will dynamically insert restaurant cards here -->
+    </div>
+
+    <!-- Modal for Restaurant Details -->
+    <div id="restaurantModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <img id="modalImage" alt="Restaurant Image" />
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
