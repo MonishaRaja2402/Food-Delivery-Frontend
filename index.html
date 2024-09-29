@@ -10,12 +10,18 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Orders</a></li>
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="#helpSection">Help</a></li>
         </ul>
     </nav>
+
+    <!-- Welcome Banner -->
+    <div class="banner">
+        <h1>Welcome to Our Food Delivery App!</h1>
+        <p>Explore delicious dishes from top-rated hotels in your city.</p>
+    </div>
 
     <!-- Search and Filter -->
     <div class="search-bar">
@@ -28,7 +34,7 @@
         <!-- JavaScript will dynamically insert restaurant cards here -->
     </div>
 
-    <!-- Modal for Restaurant Details -->
+    <!-- Modal for Restaurant Details with Dishes and Prices -->
     <div id="restaurantModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -37,6 +43,22 @@
             <p id="modalDescription"></p>
         </div>
     </div>
+
+    <!-- Help Section -->
+    <section id="helpSection" class="help-section">
+        <h2>Help & Support</h2>
+        <p>If you have any issues or need assistance, feel free to contact us at:</p>
+        <ul>
+            <li><strong>Email:</strong> support@fooddelivery.com</li>
+            <li><strong>Phone:</strong> +91-9876543210</li>
+        </ul>
+        <p>We are here to assist you with:</p>
+        <ul>
+            <li>Account and login issues</li>
+            <li>Order tracking and delivery status</li>
+            <li>Refunds and payment concerns</li>
+        </ul>
+    </section>
 
     <script src="script.js"></script>
 </body>
